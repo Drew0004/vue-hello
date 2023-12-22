@@ -24,11 +24,13 @@
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     </head>
 
-    <body>
+    <body class="bg-dark">
         <div class="container">
             <div id="app">
                 <h1 :class="textClass">{{ message }}</h1>
-                <img :class="createImgClass()" :src="url" alt="Meme Alessio">
+                <div :class="createDivImg()">
+                    <img :class="createImgClass()" :src="url" alt="Meme Alessio">
+                </div>
             </div>
         </div>
         
